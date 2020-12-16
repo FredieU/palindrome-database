@@ -1,0 +1,77 @@
+/* Reset margin and padding on all elements to avoid positioning issues
+  due to default values set on elements */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* Variable for colour theme (header & buttons) */
+:root {
+  --theme-colour: #282979;
+}
+
+/* Imported Google font with secondary alternative */
+body {
+  font-family: 'Lato', sans-serif;
+}
+
+/* Header */
+.header {
+  background-color: var(--theme-colour);
+  padding: 1em 0 1em 1em;
+}
+.header-title {
+  color: white;
+}
+
+/* Generic container to centralise all elements and autoset side margins */
+.container {
+  margin: auto;
+  width: 90%;
+}
+.container h1 {
+  font-size: 1.5em;
+}
+
+/* User string input */
+.check-string {
+  padding-top: 1.5em;
+}
+.form-input{
+  border: 1px solid black;
+  border-radius: 5px;
+  font-size: 1em;
+  height: 30px;
+  margin-top: 0.5em;
+  padding-left: 0.5em;
+  width: 300px;
+}
+.form-group small {
+  display: block;
+  font-weight: bold;
+  font-size: 1em;
+}
+#error-message {
+  color: red;
+}
+#success-message {
+  color: green;
+}
+.btn {
+  background-color: var(--theme-colour);
+  border-radius: 10px;
+  color: white;
+  display: inline-block;
+  font-size: 15px;
+  height: 35px;
+  margin-left: 0.5em;
+  padding: 0 1em 0 1em;
+}
+
+/* List recent palindromes */
+.list-recent {
+  padding-top: 1.5em;
+}
+.list-recent h1{
+  margin-bottom: 0.5em;
+}

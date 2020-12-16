@@ -1,0 +1,40 @@
+<html>
+  <head>
+    <!-- Characetr encoding -->
+    <meta charset="utf-8"/>
+    <!-- Control layout on mobile browsers -->
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <!-- Imported Google font -->
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <!-- Imported stylesheet -->
+    <link href="./css/style.css" rel="stylesheet">
+    <!-- Document title -->
+    <title>Palindrome Database</title>
+  </head>
+
+  <body onload=palindromesAPI()><!-- Get list of palindromes on load -->
+    <main>
+      <header class="header">
+        <h1 class="header-title">Palindrome Database</h1>
+      </header>
+      <section class="container">
+        <article class="check-string">
+          <h1>Check String</h1>
+          <form class="form-group">
+            <input class="form-input" id="string"/>
+            <button class="btn" onclick=handleSubmit(event)>Check</button>
+            <!-- Conditional messages to show input error/success -->
+            <small id="error-message"></small>
+            <small id="success-message"></small>
+          </form>
+        </article>
+        <article class="list-recent">
+            <h1>Recently Submitted</h1>
+            <!-- Container element to render list of palindrome entries -->
+            <div id="entry-list"></div>
+        </article>
+      </section>
+    </main>
+    <script src="js/app.js"></script>
+  </body>
+</html>

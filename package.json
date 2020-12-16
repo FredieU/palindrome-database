@@ -1,0 +1,18 @@
+{
+  "name": "palindrome_database",
+  "version": "1.0.0",
+  "description": "Endpoints to check if a given string is a palindrome and to query recent palindromes submitted.",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Fredie Unabia",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.4"
+  },
+  "devDependencies": {
+    "nodemon": "^1.18.9"
+  }
+}
